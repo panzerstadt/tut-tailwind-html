@@ -7,9 +7,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="build/tailwind.css" />
   </head>
-  <body class="bg-gray-100">
-    <div class="px-16 py-8 max-w-lg mx-auto">
-      <div class="h-auto w-12">
+  <body class="bg-gray-100 xl:bg-white xl:flex">
+    <div class="px-16 py-8 max-w-lg sm:mx-auto xl:mx-0 xl:w-3/5">
+      <div class="h-auto w-12 animation-3s animation-pulse animation-alternate animation-infinite animation-running">
         <svg
           class="fill-current text-blue-500"
           height="100%"
@@ -69,30 +69,40 @@
       </div>
       <img
         class="mt-6 rounded-lg shadow-xl"
-        src="./img//astronaut.jpg"
+        src="./img/astronaut.jpg"
         alt="working in space"
       />
-      <h1 class="mt-6 text-3xl font-bold text-gray-900 leading-tight">
-        Calling all adventurers! <br />
-        <span class="text-2xl">you can now work in space!</span> <br />
-        <span class="text-blue-500 text-2xl font-semibold"
-          >sign up for SpaceX dragon 2020</span
+      <div class="mt-6">
+        <h1 class=" text-3xl xl:text-5xl font-bold text-gray-800 leading-tight">
+          Calling all adventurers!
+        </h1>
+        <h3 class="text-2xl xl:leading-none xl:mt-2">you can now work in space!</h3>
+        <h3 class="text-blue-500 text-2xl font-semibold xl:mt-2"
+          >sign up for SpaceX dragon 2020</h
         >
-      </h1>
-      <p class="mt-2 text-sm text-gray-800 font-mono tracking-tight">
+      </div>
+      <p class="mt-2 xl:mt-10 text-sm xl:text-lg text-gray-700 font-mono xl:font-bold tracking-tight">
         working in space will solve all your neck problems, as well as your
         table height and seat problems. stop fighting gravity and start working
         at your peak like you've always wanted to!
       </p>
       <div class="mt-4">
-        <a href="#">
+        <a class="focus:outline-none" href="https://www.spacex.com/" target="blank" noreferrer noopener>
           <button
-            class="w-full px-4 py-3 shadow-lg text-sm text-white uppercase rounded-lg bg-orange-400 font-medium tracking-wider"
+            class="w-full px-4 py-3 shadow-lg text-sm text-white hover:text-gray-700 focus:outline-none focus:shadow-outline active:bg-orange-200 uppercase rounded-lg bg-orange-400 hover:bg-orange-100 font-medium tracking-wider transition-500"
           >
             Book your escape
           </button>
         </a>
       </div>
+    </div>
+
+    <div class="hidden lg:block h-0 xl:h-auto">
+      <img
+        class="opacity-0 xl:opacity-100 h-full w-screen object-cover object-right transition-delay-500 transition-opacity"
+        src="./img/earth.jpg"
+        alt="earth is so beautiful from far away!"
+      />
     </div>
   </body>
 </html>
